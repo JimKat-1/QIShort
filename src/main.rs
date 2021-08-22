@@ -1,6 +1,7 @@
-mod matcher;
 mod keyboard;
 mod key;
+mod handler;
+extern crate lazy_static;
 //mod drivers;
 
 fn key_loop() {

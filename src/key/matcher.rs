@@ -1,4 +1,4 @@
-use crate::key::Key;
+use super::Key;
 
 static ALIASES: [&[&str]; 39] = [
     &["!", "exclamation"],

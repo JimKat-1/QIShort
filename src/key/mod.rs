@@ -1,4 +1,4 @@
-use crate::matcher;
+pub mod matcher;
 
 #[derive(Clone, Default)]
 pub struct Key {
