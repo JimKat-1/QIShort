@@ -1,2 +1,2 @@
-# qishort
-Directory structured keyboard shortcuts.
+# QIShort
+Vim style keyboard shortcuts.

@@ -5,7 +5,7 @@ pub static fn_str: [(&str, fn(&str)); 2] = [
     ("exec", &exec),
 ];
 
-pub fn sh(cmd: &str) {
+pub fn sh(cmd: &str) -> String {
     let mut iter = cmd.lines();
 
     let command = Command::new("sh");
@@ -13,17 +13,4 @@ pub fn sh(cmd: &str) {
     command.arg(cmd);
 
     command.spawn();
-}
-
-// Separate arguments with empty line
-pub fn exec(args: &str) {
-    let mut iter = cmd.lines();
-
-    let cmd = Command::new(iter.next());
-
-    for i in iter {
-        cmd.arg(i);
-    }
-
-    cmd.spawn();
 }
